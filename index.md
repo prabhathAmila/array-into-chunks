@@ -1,4 +1,4 @@
-# How to split an array into chunks of the same size easily in Javascript
+# :eyes: How to split an array into chunks of the same size easily in Javascript
 
 ## In this article, you'll learn to split a Javascript array into chunks with a specified size using different implementations.
 
@@ -158,4 +158,4 @@ Array.prototype.chunk = function (chunk_size) {
 * The while loop seems to be the quickest way to split an array into chunks with a high performance in comparison to others.
 * A detail to notice in the benchmark, is that the bigger the number of items in every chunk, the quicker the task is executed.
 * With the method number 5, the browser crashes so the usage of this method is discouraged for huge amount of data.
-## Have fun !
+## :zap:Have fun ! :cake::beers::pizza::eyeglasses:
