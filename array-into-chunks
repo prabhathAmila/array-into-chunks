@@ -1,4 +1,4 @@
-How to split an array into chunks of the same size easily in Javascript
+#How to split an array into chunks of the same size easily in Javascript
 
 In this article, you'll learn to split a Javascript array into chunks with a specified size using different implementations.
 
