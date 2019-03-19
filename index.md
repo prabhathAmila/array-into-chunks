@@ -1,12 +1,12 @@
-#How to split an array into chunks of the same size easily in Javascript
+# How to split an array into chunks of the same size easily in Javascript
 
-In this article, you'll learn to split a Javascript array into chunks with a specified size using different implementations.
+## In this article, you'll learn to split a Javascript array into chunks with a specified size using different implementations.
 
-1. USING A FOR LOOP AND THE SLICE FUNCTION
+### 1. USING A FOR LOOP AND THE SLICE FUNCTION
 
-Basically, every method will use the slice method in order to split the array, in this case what makes this method different is the for loop.
+#### Basically, every method will use the slice method in order to split the array, in this case what makes this method different is the for loop.
 
-In case that the array is not uniform, the remaining items will be in an array too, however the size will be less for obvious reasons.
+#### In case that the array is not uniform, the remaining items will be in an array too, however the size will be less for obvious reasons.
 
 <code>
 /**
