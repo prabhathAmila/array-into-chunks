@@ -135,7 +135,7 @@ Array.prototype.chunk = function (chunk_size) {
 ##### Disclaimer: don't use in production environments with huge amount of data.
 
 
-#### About performance
+### About performance
 
 ##### Our simple benchmark will be to split an array of 100000 (100K) items (only numbers) into chunks of 3 items/array. This task will be executed 1000 (1K) times in order to provide high accuracy, the values are given in milliseconds.
 
@@ -146,12 +146,13 @@ Array.prototype.chunk = function (chunk_size) {
 * Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz (4 CPUs), ~3.3GHz
 * 8192MB RAM
 
-METHOD	                                        |   TOTAL TIME (MS)	     |  AVERAGE TIME PER TASK (MS)
-1 (for loop)	                                    5778.015000000001	    5.776805000000013
-2 (for loop in prototype)	                        5681.145	            5.679875000000007
-3 (array map in prototype)	                        8855.470000000001	    8.854190000000001
-4 (while loop)	                                    1468.6650000000002	    1.468275000000002
-5 (recursive function with slice and concat)	    TEST-CRASHES	        TEST-CRASHES
+|  METHOD									| TOTAL TIME (MS)	|	AVERAGE TIME PER TASK (MS) |
+| ----------------------------------------- | ----------------- | ---------------------------- |
+|1 (for loop)								| 5778.015000000001	|	5.776805000000013 |
+|2 (for loop in prototype)					| 5681.145			|	5.679875000000007 |
+|3 (array map in prototype)					| 8855.470000000001	|	8.854190000000001 |
+|4 (while loop)								| 1468.6650000000002|	1.468275000000002| 
+|5 (recursive function with slice and concat)|	TEST-CRASHES	|	TEST-CRASHES |
 
 
 * The while loop seems to be the quickest way to split an array into chunks with a high performance in comparison to others.
