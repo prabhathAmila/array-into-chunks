@@ -8,7 +8,7 @@
 
 ##### In case that the array is not uniform, the remaining items will be in an array too, however the size will be less for obvious reasons.
 
-```
+```javascript
 /**
  * Returns an array with arrays of the given size.
  *
@@ -37,7 +37,7 @@ console.log(result);
 ### 2. USING A FOR LOOP, SLICE AND SET FUNCTION IN THE PROTOTYPE OF ARRAY
 ##### You can register custom functions in the prototype of a function, in this case you can create a custom function with the name chunk that accomplishes our goal:
 
-```
+```javascript
 /**
  * Define the chunk method in the prototype of an array
  * that returns an array with arrays of the given size.
@@ -65,7 +65,7 @@ console.log(result);
 ### 3. USING ARRAY MAP IN THE PROTOTYPE OF ARRAY
 ##### The map function calls a provided callback function once for each element in an array, in order, and constructs a new array from the results. The function will return an array with a length defined by the division of the length of the providen array by the size of the chunk. The fill function (as no parameter providen) will fill the created array with undefined and finally every undefined value in the array will be replaced by a new array (the result of slice the providen array with the proper index).
 
-```
+```javascript
 /**
  * Define the chunk method in the prototype of an array
  * that returns an array with arrays of the given size.
@@ -90,7 +90,7 @@ console.log(result);
 ### 4. USING A WHILE LOOP AND SLICE
 ##### In tipical and normal conditions the while loop is slightly faster. However we should be aware that these performance gains are significant for large number of iterations. Therefore, if your array is huge and you want to split in chunks with a low number, you should consider in use the method that uses while to drastically increase the performance.
 
-```
+```javascript
 /**
  * Returns an array with arrays of the given size.
  *
@@ -117,7 +117,7 @@ console.log(result);
 ##### In this method the recursion is fairly expensive if we talk about performance and browser resources. Besides, concat function is in some browsers significantly slower than the join method.
 
 
-```
+```javascript
 /**
  * Define the chunk method in the prototype of an array
  * that returns an array with arrays of the given size (with a recursive function).
